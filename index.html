@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>beardiest</title>
+  <meta name="description" content="beardiest — software engineer" />
+  <meta name="theme-color" content="#000000" />
+  <meta property="og:title" content="beardiest" />
+  <meta property="og:description" content="software engineer, projects, and experiments" />
+  <meta property="og:type" content="website" />
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem("beardiest-theme") === "invert") {
+          document.documentElement.classList.add("theme-invert");
+        }
+      } catch (error) {
+        // Ignore storage errors and continue with default theme.
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <canvas class="bg-network" aria-hidden="true"></canvas>
+  <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+
+  <header>
+    <button id="themeToggle" class="brand-toggle" type="button" aria-label="Toggle night mode" aria-pressed="false">beardiest</button>
+    <nav aria-label="Primary">
+      <ul class="navbar">
+        <li><a href="#home" aria-label="Home"><ion-icon name="home-outline"></ion-icon></a></li>
+        <li><a href="#projects" aria-label="Projects"><ion-icon name="briefcase-outline"></ion-icon></a></li>
+        <li><a href="#about" aria-label="About"><ion-icon name="person-outline"></ion-icon></a></li>
+        <li><a href="#contact" aria-label="Contact"><ion-icon name="mail-outline"></ion-icon></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="row full-screen">
+          <div class="home-content">
+            <div class="block">
+              <h6>i am</h6>
+              <div class="glitch"><h1>beardiest</h1></div>
+              <h3>software engineer</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="section-content">
+        <h2>projects</h2>
+        <div class="project-graph" role="list">
+          <svg class="project-graph-edges" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"></svg>
+
+          <a class="project-node" role="listitem" href="projects/beardiest.com/">
+            <span class="project-node-dot" aria-hidden="true"></span>
+            <span class="project-node-label">
+              <span class="project-node-title">beardiest.com</span>
+              <span class="project-node-desc">This website, rebuilt as a project page.</span>
+              <span class="project-node-cta" aria-hidden="true">View &rarr;</span>
+            </span>
+          </a>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-me-container">
+        <div class="grid">
+          <h2>about me</h2>
+          <p>
+            I am a software engineer from Dallas who likes building things, breaking things, and occasionally pretending that was the plan.
+          </p>
+          <p>
+            This site is where I post projects of all sizes, from serious builds to fun nonsense. If one of them inspires you to make something weird and put it out there, mission accomplished.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-content">
+        <h2>contact</h2>
+        <p>say howdy at <a href="mailto:beardiest@gmail.com">beardiest@gmail.com</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" aria-label="Footer">
+    <div class="section-content footer-inner">
+      <p class="footer-brand">beardiest</p>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="#home">home</a>
+        <a href="#projects">projects</a>
+        <a href="#about">about</a>
+        <a href="#contact">contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

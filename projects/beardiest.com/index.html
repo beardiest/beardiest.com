@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>beardiest.com | beardiest</title>
+  <meta name="description" content="beardiest.com project details, media, architecture notes, and development log." />
+  <meta name="theme-color" content="#000000" />
+  <meta property="og:title" content="beardiest.com | beardiest" />
+  <meta property="og:description" content="A personal website to showcase projects and development work." />
+  <meta property="og:type" content="article" />
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem("beardiest-theme") === "invert") {
+          document.documentElement.classList.add("theme-invert");
+        }
+      } catch (error) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <canvas class="bg-network" aria-hidden="true"></canvas>
+  <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+
+  <header>
+    <button id="themeToggle" class="brand-toggle" type="button" aria-label="Toggle night mode" aria-pressed="false">beardiest</button>
+    <nav aria-label="Primary">
+      <ul class="navbar">
+        <li><a href="../../index.html#home" aria-label="Home"><ion-icon name="home-outline"></ion-icon></a></li>
+        <li><a href="../../index.html#projects" aria-label="Projects"><ion-icon name="briefcase-outline"></ion-icon></a></li>
+        <li><a href="../../index.html#about" aria-label="About"><ion-icon name="person-outline"></ion-icon></a></li>
+        <li><a href="../../index.html#contact" aria-label="Contact"><ion-icon name="mail-outline"></ion-icon></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" class="page-shell">
+    <article class="project-detail">
+      <a class="project-back-link" href="../../index.html#projects">Back to Projects</a>
+
+      <header class="project-head">
+        <p class="project-kicker">Personal Website Project</p>
+        <h1 class="project-title">beardiest.com</h1>
+        <p class="project-summary">A personal website to showcase projects and development work.</p>
+
+        <div class="project-meta" aria-label="Project metadata">
+          <div class="project-meta-item">
+            <span class="project-meta-label">Role</span>
+            <span class="project-meta-value">Programming + Design</span>
+          </div>
+          <div class="project-meta-item">
+            <span class="project-meta-label">Stack</span>
+            <span class="project-meta-value">HTML, CSS, JavaScript</span>
+          </div>
+          <div class="project-meta-item">
+            <span class="project-meta-label">Status</span>
+            <span class="project-meta-value">In Progress</span>
+          </div>
+          <div class="project-meta-item">
+            <span class="project-meta-label">Year</span>
+            <span class="project-meta-value">2026</span>
+          </div>
+        </div>
+      </header>
+
+      <section class="project-content" aria-label="Media">
+        <h2>Media</h2>
+        <div class="media-grid">
+          <div class="media-card">
+            <img class="media-asset" src="assets/beardiestcom_img.png" alt="Screenshot of the beardiest.com project page and interface." />
+            <p>Stage preview showing website layout, design elements, and user interface.</p>
+          </div>
+          <div class="media-card">
+            <video class="media-asset" controls preload="metadata" playsinline>
+              <source src="assets/beardiestcom_vid.webm" type="video/webm" />
+              Your browser does not support the video tag.
+            </video>
+            <p>Demo clip highlighting website navigation and interactive features.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-content" aria-label="Overview">
+        <h2>Overview</h2>
+        <p>I wanted to create a personal website that showcases my projects and development work in a visually appealing and user-friendly manner. The goal was to provide visitors with an engaging experience while keeping the design minimal.</p>
+      </section>
+
+      <section class="project-content" aria-label="Architecture and systems">
+        <h2>Architecture and Systems</h2>
+        <ul>
+          <li>HTML for structure and content</li>
+          <li>CSS for styling and layout</li>
+          <li>JavaScript for interactivity and dynamic content</li>
+        </ul>
+      </section>
+
+      <section class="project-content" aria-label="Challenges and outcomes">
+        <h2>Challenges and Outcomes</h2>
+        <p>How to make the site look visually appealing while maintaining usability.</p>
+      </section>
+
+      <section class="project-content" aria-label="Links and docs">
+        <h2>Links and Docs</h2>
+        <div class="project-links">
+          <a class="project-link" href="https://www.beardiest.com">Live Site</a>
+          <a class="project-link" href="#">Documentation</a>
+          <a class="project-link" href="#">Source Repo</a>
+          <a class="project-link" href="#">Dev Notes</a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="footer" aria-label="Footer">
+    <div class="section-content footer-inner">
+      <p class="footer-brand">beardiest</p>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="../../index.html#home">Home</a>
+        <a href="../../index.html#projects">Projects</a>
+        <a href="../../index.html#about">About</a>
+        <a href="../../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../../js/script.js"></script>
+</body>
+</html>
