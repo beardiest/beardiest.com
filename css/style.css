@@ -459,13 +459,21 @@ body > header {
     color: #00ffff;
 }
 
-@media screen and (max-width: 900px) {
+.hero {
+    background-position:
+        right clamp(1rem, 4vw, 3rem)
+        top calc(var(--hero-top-offset) + var(--hero-parallax-offset));
+}
+
+@media (max-width: 900px) {
+
     .hero {
-        background-position: center top calc(var(--hero-top-offset) + var(--hero-parallax-offset));
-        background-size: min(92vw, 520px);
-        align-items: flex-start;
-        padding-top: 18rem;
-        min-height: 115vh;
+
+        background-position:
+            right -90px
+            top calc(var(--hero-top-offset) + var(--hero-parallax-offset));
+
+        background-size: 420px;
     }
 
     .hero h1 {
